@@ -1,0 +1,4 @@
+pandas>=2.2
+pydantic>=2.6
+pydantic-settings>=2.2
+duckdb>=1.1

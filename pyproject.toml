@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-bi-analytics-suite"
+version = "1.0.0"
+description = "Retail star-schema analytics: Pandas transforms, PostgreSQL KPI SQL, and Power BI / Tableau handoff."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Alexandru Cojocari" }]
+keywords = ["analytics", "business-intelligence", "pandas", "sql", "star-schema"]
+dependencies = [
+    "pandas>=2.2",
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "duckdb>=1.1",
+]
+
+[project.optional-dependencies]
+postgres = [
+    "sqlalchemy>=2.0",
+    "psycopg[binary]>=3.1",
+]
+dev = [
+    "pytest>=8.0",
+    "sqlglot>=25.0",
+]
+
+[project.scripts]
+bi-analytics = "bi_analytics.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+addopts = "-q"

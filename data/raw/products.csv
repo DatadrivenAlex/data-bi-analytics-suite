@@ -1,0 +1,25 @@
+sku,product_name,category,subcategory,brand,unit_cost,is_active
+SKU-1001,Arc Pendant,Lighting,Pendants,Nordlicht,42.00,true
+SKU-1002,Harbor Table Lamp,Lighting,Lamps,Nordlicht,28.00,true
+SKU-1003,Field Sconce,Lighting,Lamps,Osterlin,19.00,true
+SKU-1004,Linen Shade Bulb Set,Lighting,Bulbs,Kleinware,8.00,true
+SKU-1101,Oak Throw,Textiles,Throws,Sable,35.00,true
+SKU-1102,Harbor Cushion,Textiles,Cushions,Sable,18.00,true
+SKU-1103,Field Curtain Pair,Textiles,Curtains,Atelier Feld,64.00,true
+SKU-1104,Linen Napkin Set,Textiles,Throws,Atelier Feld,12.00,false
+SKU-1201,Stoneware Bowl,Tabletop,Ceramics,Hafen & Co,16.00,true
+SKU-1202,Ripple Glass Carafe,Tabletop,Glass,Hafen & Co,24.00,true
+SKU-1203,Matte Cutlery Set,Tabletop,Cutlery,Kleinware,39.00,true
+SKU-1204,Espresso Cup Pair,Tabletop,Ceramics,Osterlin,14.00,true
+SKU-1301,Seagrass Basket,Storage,Baskets,Kleinware,22.00,true
+SKU-1302,Oak Wall Shelf,Storage,Shelves,Nordlicht,52.00,true
+SKU-1303,Lidded Box,Storage,Boxes,Sable,15.00,true
+SKU-1304,Wire Basket,Storage,Baskets,Osterlin,11.00,false
+SKU-1401,Terracotta Planter,Outdoor,Planters,Atelier Feld,27.00,true
+SKU-1402,Brass Lantern,Outdoor,Lanterns,Nordlicht,46.00,true
+SKU-1403,Outdoor Seat Pad,Outdoor,Textiles,Sable,21.00,true
+SKU-1404,Herb Pot Trio,Outdoor,Planters,Hafen & Co,18.00,true
+SKU-1501,Marble Tray,Tabletop,Ceramics,Atelier Feld,31.00,true
+SKU-1502,Smoke Tumbler Set,Tabletop,Glass,Hafen & Co,20.00,true
+SKU-1503,Wool Cushion,Textiles,Cushions,Sable,26.00,true
+SKU-1504,Floor Lantern,Lighting,Lamps,Osterlin,73.00,true

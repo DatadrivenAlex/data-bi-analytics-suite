@@ -1,0 +1,9 @@
+store_id,store_name,city,country,region,store_format
+S01,Berlin Flagship,Berlin,Germany,DACH,Flagship
+S02,Munich Outlet,Munich,Germany,DACH,Outlet
+S03,Hamburg Flagship,Hamburg,Germany,DACH,Flagship
+S04,Vienna Flagship,Vienna,Austria,DACH,Flagship
+S05,Salzburg Outlet,Salzburg,Austria,DACH,Outlet
+S06,Amsterdam Flagship,Amsterdam,Netherlands,BENELUX,Flagship
+S07,Rotterdam Outlet,Rotterdam,Netherlands,BENELUX,Outlet
+S08,Web EU,Berlin,Germany,DACH,Web
