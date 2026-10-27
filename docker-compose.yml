@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: bi
+      POSTGRES_PASSWORD: bi
+      POSTGRES_DB: bi_analytics
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bi -d bi_analytics"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  analytics:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://bi:bi@postgres:5432/bi_analytics
+      INPUT_DIR: /app/data/raw
+      OUTPUT_DIR: /app/warehouse
+      SQL_DIR: /app/sql
+    command: ["run", "--postgres"]
+    volumes:
+      - ./warehouse:/app/warehouse
